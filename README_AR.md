@@ -5,13 +5,16 @@
 </div>
 
 <div dir="rtl">
+
+# 🚀 برنامج AutoDeploy — أداة التثبيت والنشر التلقائي للبرامج وإعداد الويندوز
+
 <div align="center">
 
 ### [⬇️ اضغط هنا لتحميل أحدث إصدار — AutoDeploy.exe](https://github.com/Esam-Haraz/AutoDeploy/releases/latest/download/AutoDeploy.exe)
 
 </div>
 
-# 🚀 برنامج AutoDeploy — أداة التثبيت والنشر التلقائي للبرامج وإعداد الويندوز
+
 
 **AutoDeploy** هو أداة مستقلة تماماً (Zero-Dependency) لأتمتة تثبيت البرامج وإعداد النظام، مصممة للعمل مباشرة فور تثبيت **نسخة ويندوز جديدة خام (Fresh Windows Install)** دون الحاجة لأي مكتبات خارجية.
 
