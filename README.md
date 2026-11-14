@@ -13,6 +13,7 @@
 </div>
 
 
+
 **AutoDeploy** is a standalone, zero-dependency Windows software deployment and post-installation automation tool designed to run immediately on a **fresh Windows installation** (Bare-Metal OS). 
 
 Instead of spending hours after formatting your PC manually clicking "Next" on dozens of installers, hunting for latest versions, copying license files, restoring `AppData` configurations, and recreating missing desktop shortcuts, **AutoDeploy** automates your entire post-format workflow in a single click—wrapped in a 60FPS **Liquid Glass** interface.
