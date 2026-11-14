@@ -1,8 +1,11 @@
 <div align="right">
-  <a href="README_AR.md">
-    <img src="https://img.shields.io/badge/🌍 Read_in_Arabic-0A84FF?style=for-the-badge" alt="Read in Arabic" />
-  </a>
+
+**[🌍 قراءة باللغة العربية | Read in Arabic](README_AR.md)**
+
 </div>
+
+# 🚀 AutoDeploy — Automated Windows Software Deployment & OS Setup Tool
+
 <div align="center">
   <a href="https://github.com/Esam-Haraz/AutoDeploy/releases/latest/download/AutoDeploy.exe">
     <img src="https://img.shields.io/badge/⬇_Download_Latest-AutoDeploy.exe-2ea44f?style=for-the-badge&logo=windows" alt="Download AutoDeploy" />
