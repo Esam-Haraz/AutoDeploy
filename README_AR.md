@@ -9,9 +9,9 @@
 # 🚀 برنامج AutoDeploy — أداة التثبيت والنشر التلقائي للبرامج وإعداد الويندوز
 
 <div align="center">
-
-### [⬇️ اضغط هنا لتحميل أحدث إصدار — AutoDeploy.exe](https://github.com/Esam-Haraz/AutoDeploy/releases/latest/download/AutoDeploy.exe)
-
+  <a href="https://github.com/Esam-Haraz/AutoDeploy/releases/latest/download/AutoDeploy.exe">
+    <img src="https://img.shields.io/badge/⬇_Download_Latest-AutoDeploy.exe-2ea44f?style=for-the-badge&logo=windows" alt="Download AutoDeploy" />
+  </a>
 </div>
 
 
