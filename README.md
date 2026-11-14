@@ -1,6 +1,6 @@
 <div align="right">
   <a href="README_AR.md">
-    <img src="https://img.shields.io/badge/🌍_قراءة_باللغة_العربية-Read_in_Arabic-0A84FF?style=for-the-badge" alt="Read in Arabic" />
+    <img src="https://img.shields.io/badge/🌍-Read_in_Arabic-0A84FF?style=for-the-badge" alt="Read in Arabic" />
   </a>
 </div>
 
