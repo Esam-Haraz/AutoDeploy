@@ -12,7 +12,6 @@
   </a>
 </div>
 
-# 🚀 AutoDeploy — Automated Windows Software Deployment & OS Setup Tool
 
 **AutoDeploy** is a standalone, zero-dependency Windows software deployment and post-installation automation tool designed to run immediately on a **fresh Windows installation** (Bare-Metal OS). 
 
