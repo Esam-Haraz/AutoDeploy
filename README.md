@@ -1,7 +1,7 @@
 <div align="right">
-
-**[🌍 قراءة باللغة العربية | Read in Arabic](README_AR.md)**
-
+  <a href="README_AR.md">
+    <img src="https://img.shields.io/badge/🌍_Read_in_Arabic-0A84FF?style=for-the-badge" alt="Read in Arabic" />
+  </a>
 </div>
 
 # 🚀 AutoDeploy — Automated Windows Software Deployment & OS Setup Tool
