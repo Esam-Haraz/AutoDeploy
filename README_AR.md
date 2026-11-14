@@ -5,6 +5,11 @@
 </div>
 
 <div dir="rtl">
+<div align="center">
+  <a href="https://github.com/Esam-Haraz/AutoDeploy/releases/latest/download/AutoDeploy.exe">
+    <img src="https://img.shields.io/badge/⬇_تحميل_البرنامج_مباشرة-AutoDeploy.exe-2ea44f?style=for-the-badge&logo=windows" alt="تحميل AutoDeploy" />
+  </a>
+</div>
 
 # 🚀 برنامج AutoDeploy — أداة التثبيت والنشر التلقائي للبرامج وإعداد الويندوز
 
