@@ -39,6 +39,7 @@
   - [CSS-07: DUAL QUEUE COMPARISON (SILENT VS CUSTOM SETUP)]
   - [CSS-08: INTERACTIVE ADDITIONAL STEPS 4-MODE EXPLORER]
   - [CSS-09: 8 REAL-WORLD WINDOWS CHALLENGES & ENGINEERED SOLUTIONS]
+  - [CSS-09B: RELEASE CHANGELOG & STABILITY UPDATES SECTION]
   - [CSS-10: CUSTOM AUTOMATION SERVICES & PRIVACY CONTACT FOOTER]
   - [HTML-01: CIRCULAR LANGUAGE CURTAIN & FLOATING TOAST]
   - [HTML-02: NAVBAR]
@@ -46,6 +47,7 @@
   - [HTML-04: DUAL QUEUE ARCHITECTURE SECTION]
   - [HTML-05: INTERACTIVE ADDITIONAL STEPS SECTION]
   - [HTML-06: 8 ENGINEERED SOLUTIONS BENTO GRID]
+  - [HTML-06B: RELEASE CHANGELOG & STABILITY UPDATES SECTION]
   - [HTML-07: CUSTOM SOFTWARE SERVICES & CONTACT FOOTER]
   - [JS-00: DEVELOPER CONFIGURATION VARIABLES (EDIT URLS HERE)]
   - [JS-01: BILINGUAL CONTENT DATA STORE (EN & AR)]
@@ -266,7 +268,7 @@
       text-decoration: none;
     }
     /* END [CSS-02: BASE, AMBIENT ORBS, MOUSE SPOTLIGHT & SCROLLBAR] */
-    
+
     /* ==========================================================================
        START [CSS-03: CIRCULAR CORNER LANGUAGE REVEAL CURTAIN]
        ========================================================================== */
@@ -389,14 +391,14 @@
 
     .nav-links {
       display: none;
-      gap: 1.6rem;
-      margin-inline-end: 1rem;
-      font-size: 0.9rem;
+      gap: 1.35rem;
+      margin-inline-end: 0.8rem;
+      font-size: 0.88rem;
       font-weight: 500;
       color: var(--text-muted);
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1060px) {
       .nav-links {
         display: flex;
       }
@@ -1420,6 +1422,127 @@
     /* END [CSS-09: 8 REAL-WORLD WINDOWS CHALLENGES & ENGINEERED SOLUTIONS] */
 
     /* ==========================================================================
+       START [CSS-09B: RELEASE CHANGELOG & STABILITY UPDATES SECTION]
+       ========================================================================== */
+    .changelog-top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .changelog-top-bar .section-header {
+      margin-bottom: 0;
+    }
+
+    .changelog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.45rem;
+    }
+
+    .changelog-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: 18px;
+      padding: 1.85rem;
+      backdrop-filter: blur(14px);
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .changelog-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+    }
+
+    .changelog-card.accent-blue { border-top: 3px solid var(--accent-primary); }
+    .changelog-card.accent-green { border-top: 3px solid var(--accent-secondary); }
+    .changelog-card.accent-purple { border-top: 3px solid var(--accent-purple); }
+
+    .cl-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .cl-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: rgba(56, 152, 255, 0.14);
+      border: 1px solid rgba(120, 210, 255, 0.28);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .changelog-card.accent-green .cl-icon-box {
+      background: rgba(66, 230, 149, 0.14);
+      border-color: rgba(66, 230, 149, 0.32);
+    }
+
+    .changelog-card.accent-purple .cl-icon-box {
+      background: rgba(168, 105, 255, 0.14);
+      border-color: rgba(168, 105, 255, 0.32);
+    }
+
+    .cl-card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #ffffff;
+    }
+
+    .cl-items-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .cl-item {
+      background: rgba(8, 12, 22, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 0.9rem 1.05rem;
+    }
+
+    .cl-item-title {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--accent-secondary);
+      margin-bottom: 0.3rem;
+    }
+
+    .cl-item-desc {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+
+    .cl-item-desc code {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      background: rgba(255, 255, 255, 0.08);
+      color: #93c5fd;
+      padding: 0.1rem 0.38rem;
+      border-radius: 5px;
+      direction: ltr;
+      display: inline-block;
+    }
+    /* END [CSS-09B: RELEASE CHANGELOG & STABILITY UPDATES SECTION] */
+
+    /* ==========================================================================
        START [CSS-10: CUSTOM AUTOMATION SERVICES & PRIVACY CONTACT FOOTER]
        ========================================================================== */
     .footer-section {
@@ -1555,6 +1678,7 @@
     .queues-grid > *,
     .steps-explorer > *,
     .challenges-grid > *,
+    .changelog-grid > *,
     .footer-container > * {
       min-width: 0;
       max-width: 100%;
@@ -1562,7 +1686,8 @@
 
     .step-pipeline-box,
     .ch-solution,
-    .queue-points li {
+    .queue-points li,
+    .cl-item-desc {
       overflow-wrap: anywhere;
       word-break: break-word;
     }
@@ -1615,11 +1740,13 @@
       .queue-card,
       .steps-explorer,
       .step-detail-panel,
+      .changelog-card,
       .services-card,
       .contact-card {
         padding: 1.25rem;
       }
-      .challenges-grid {
+      .challenges-grid,
+      .changelog-grid {
         grid-template-columns: 1fr;
       }
       .contact-link-item {
@@ -1629,7 +1756,7 @@
       }
     }
     /* END [CSS-11: MOBILE RESPONSIVENESS & OVERFLOW PROTECTION] */
-    
+
   </style>
 </head>
 <body data-theme="ocean">
@@ -1680,7 +1807,7 @@
         <path d="M28 15 H36 V28 H43 L32 38 L21 28 H28 Z" fill="#ffffff"/>
       </svg>
       <span>AutoDeploy</span>
-      <span class="brand-ver" id="nav-ver-badge">v1.0.0</span>
+      <span class="brand-ver" id="nav-ver-badge">v1.2.0</span>
     </a>
 
     <div class="nav-actions">
@@ -1688,6 +1815,7 @@
         <a href="#queues-section" id="nav-queues" onclick="scrollToSection(event, '#queues-section')">Dual Queues</a>
         <a href="#steps-section" id="nav-steps" onclick="scrollToSection(event, '#steps-section')">Additional Steps</a>
         <a href="#challenges-section" id="nav-challenges" onclick="scrollToSection(event, '#challenges-section')">Engineered Solutions</a>
+        <a href="#changelog-section" id="nav-changelog" onclick="scrollToSection(event, '#changelog-section')">What's New</a>
         <a href="#contact-section" id="nav-contact" onclick="scrollToSection(event, '#contact-section')">Custom Tools & Contact</a>
       </nav>
 
@@ -1738,7 +1866,7 @@
           </div>
 
           <div class="release-meta-strip">
-            <span id="meta-version">📦 Latest Release: v1.0.0</span>
+            <span id="meta-version">📦 Latest Release: v1.2.0</span>
             <span id="meta-size">⚡ Standalone Binary: ~34.7 MB</span>
             <span id="meta-portable">💾 100% USB & Portable Drive Ready</span>
           </div>
@@ -1761,7 +1889,7 @@
                   </svg>
                   <div>
                     <div class="sim-app-name">AutoDeploy</div>
-                    <div class="sim-app-sub">v1.0.0 • Universal Silent Detector • OS Config Snapshot • Auto-Updater</div>
+                    <div class="sim-app-sub">v1.2.0 • Universal Silent Detector • OS Config Snapshot • Auto-Updater</div>
                   </div>
                 </div>
 
@@ -1865,8 +1993,32 @@
         <!-- Populated dynamically by [JS-03] -->
       </div>
     </section>
+    <!-- END [HTML-06: 8 ENGINEERED SOLUTIONS BENTO GRID] -->
+
+    <!-- ========================================================================
+         START [HTML-06B: RELEASE CHANGELOG & STABILITY UPDATES SECTION]
+         ======================================================================== -->
+    <section class="section-block" id="changelog-section">
+      <div class="changelog-top-bar">
+        <div class="section-header">
+          <span class="section-tag" id="changelog-tag">Release Notes • v1.2.0</span>
+          <h2 class="section-title" id="changelog-title">What's New & Fixed in AutoDeploy</h2>
+          <p class="section-desc" id="changelog-desc">
+            Latest stability, unattended execution, 64-bit concurrency, and multilingual batch script improvements:
+          </p>
+        </div>
+
+        <a href="https://github.com/Esam-Haraz/AutoDeploy/releases" target="_blank" rel="noopener" class="btn btn-secondary" id="changelog-gh-link">
+          View Releases on GitHub ↗
+        </a>
+      </div>
+
+      <div class="changelog-grid" id="changelog-grid">
+        <!-- Populated dynamically by [JS-03] -->
+      </div>
+    </section>
+    <!-- END [HTML-06B: RELEASE CHANGELOG & STABILITY UPDATES SECTION] -->
   </main>
-  <!-- END [HTML-06: 8 ENGINEERED SOLUTIONS BENTO GRID] -->
 
   <!-- ========================================================================
        START [HTML-07: CUSTOM SOFTWARE SERVICES & CONTACT FOOTER]
@@ -1973,6 +2125,7 @@
           queues: "Dual Queues",
           steps: "Additional Steps",
           challenges: "Engineered Solutions",
+          changelog: "What's New",
           contact: "Custom Tools & Contact"
         },
         heroTag: "Zero-Dependency Windows Utility",
@@ -2122,6 +2275,65 @@
             solution: "Bundles the required Visual C++ DLLs directly inside the standalone AutoDeploy.exe binary during PyInstaller compilation so it runs from second one."
           }
         ],
+        changelogTag: "Release Notes • v1.2.0",
+        changelogTitle: "What's New & Fixed in AutoDeploy",
+        changelogDesc: "Latest stability, unattended execution, 64-bit concurrency, and multilingual batch script improvements:",
+        changelogGhLink: "View Releases on GitHub ↗",
+        changelogCards: [
+          {
+            accent: "accent-blue",
+            icon: "🚀",
+            title: "Unattended Deployment & Update Handling",
+            items: [
+              {
+                title: "Smart Unattended Timeout",
+                desc: "If an update prompt times out without user input during <code>Silent Setup</code>, AutoDeploy now assumes the session is unattended, keeps the local version, and automatically skips update checks for the remaining items in that phase instead of waiting 60 seconds per app."
+              },
+              {
+                title: "Automatic Reset for Custom Setup",
+                desc: "Update prompts are automatically re-enabled when <code>Phase 2 (Custom Setup)</code> begins so interactive installations always check for updates normally."
+              }
+            ]
+          },
+          {
+            accent: "accent-green",
+            icon: "🛡️",
+            title: "Stability, Window Closing & Concurrency",
+            items: [
+              {
+                title: "Safe Stop & Close Flow",
+                desc: "Fixed a race condition between <code>QThread.finished</code> and <code>isRunning()</code> when stopping a deployment or closing the window mid-run. Clicking Close (✕ / Alt+F4) while stopping now waits cleanly for the active step to finish before exiting."
+              },
+              {
+                title: "Readable Close Confirmation Dialog",
+                desc: "Applied a dark-glass theme to the \"Deployment in Progress\" confirmation prompt so text and buttons are clearly visible."
+              },
+              {
+                title: "64-Bit Safe Single-Instance Mutex",
+                desc: "Updated <code>CreateMutexW</code> / <code>CloseHandle</code> bindings with explicit 64-bit <code>ctypes</code> signatures (<code>use_last_error=True</code>), proper <code>ERROR_ACCESS_DENIED</code> handling for elevated instances, and fail-open behavior on unexpected OS mutex errors."
+              },
+              {
+                title: "Crash Dialog Rate-Limiting",
+                desc: "All unhandled exceptions continue to be written to <code>crash_log.txt</code>, while modal error popups are now limited to at most once every 30 seconds to prevent dialog stacking."
+              }
+            ]
+          },
+          {
+            accent: "accent-purple",
+            icon: "⚙️",
+            title: "Batch Runner & Logging Improvements",
+            items: [
+              {
+                title: "Arabic / UTF-8 Batch Path Fix",
+                desc: "Added <code>re.ASCII</code> flags to regex substitutions in the <code>.bat</code> / <code>.cmd</code> runner so UTF-8 multibyte characters (such as Arabic filenames) are never misinterpreted as whitespace during automatic <code>%~dp0</code> path quoting or <code>pause</code> bypassing."
+              },
+              {
+                title: "Cleaner Logs",
+                desc: "Removed duplicate exit code <code>1638</code> (\"already installed\") log messages and ensured the storage path note is always included in exported log files without duplicating it in the UI console."
+              }
+            ]
+          }
+        ],
         srvTag: "Custom Software Development",
         srvHeading: "Need a Custom Desktop Tool or Automation Utility?",
         srvDesc: "I built AutoDeploy from the ground up to solve real operational bottlenecks. I am available to design and build custom Windows desktop software, workflow automation tools, and standalone Python/PyQt6 utilities tailored to your workflow.",
@@ -2148,6 +2360,7 @@
           queues: "طابورا التثبيت",
           steps: "الخطوات الإضافية",
           challenges: "الحلول الهندسية",
+          changelog: "أحدث التحديثات",
           contact: "طلب أداة مخصصة وتواصل"
         },
         heroTag: "أداة ويندوز مستقلة بدون مكتبات خارجية",
@@ -2297,6 +2510,65 @@
             solution: "دمج ملفات الـ DLL الأساسية داخل ملف AutoDeploy.exe نفسه أثناء البناء بـ PyInstaller ليعمل فوراً من أول ثانية بعد الفورمات."
           }
         ],
+        changelogTag: "ملاحظات الإصدار • v1.2.0",
+        changelogTitle: "أبرز التحديثات والإصلاحات في AutoDeploy",
+        changelogDesc: "أحدث التحسينات الهندسية في التثبيت التلقائي، واستقرار الإغلاق، ودعم أنظمة 64-bit والمسارات العربية:",
+        changelogGhLink: "عرض جميع الإصدارات على GitHub ↗",
+        changelogCards: [
+          {
+            accent: "accent-blue",
+            icon: "🚀",
+            title: "التعامل الذكي مع التحديثات أثناء التثبيت التلقائي",
+            items: [
+              {
+                title: "تخطي ذكي عند عدم وجود المستخدم",
+                desc: "في حال انتهاء مهلة نافذة التحديث (60 ثانية) بدون استجابة أثناء مرحلة <code>Silent Setup</code>، يفترض البرنامج أن الجهاز غير مراقَب ويحتفظ بالإصدار المحلي ويتخطى فحص التحديثات لباقي برامج هذه المرحلة تلقائياً بدلاً من الانتظار لكل برنامج."
+              },
+              {
+                title: "إعادة التفعيل في التثبيت المخصص",
+                desc: "يتم إعادة تفعيل إشعارات التحديث تلقائياً بمجرد بدء <code>Phase 2 (Custom Setup)</code> لضمان عمل التحديثات كالمعتاد أثناء التثبيت التفاعلي."
+              }
+            ]
+          },
+          {
+            accent: "accent-green",
+            icon: "🛡️",
+            title: "الاستقرار وإغلاق النافذة وإدارة العمليات",
+            items: [
+              {
+                title: "إيقاف وإغلاق أكثر دقة وأماناً",
+                desc: "حل مشكلة التوقيت (Race Condition) بين <code>QThread.finished</code> و <code>isRunning()</code> عند الضغط على زر الإيقاف أو إغلاق البرنامج أثناء التشغيل، بحيث ينتظر البرنامج انتهاء الخطوة الحالية بأمان ثم يُغلق دون تعليق."
+              },
+              {
+                title: "تحسين مظهر نافذة تأكيد الإغلاق",
+                desc: "إضافة تصميم داكن متناسق لنافذة تأكيد الإغلاق أثناء التثبيت لضمان وضوح النصوص والأزرار."
+              },
+              {
+                title: "تأمين منع تكرار التشغيل (Mutex) لأنظمة 64-bit",
+                desc: "تحديث دوال الويندوز <code>CreateMutexW</code> بتعريفات 64-bit دقيقة (<code>use_last_error=True</code>) مع دعم اكتشاف النسخ العاملة بصلاحيات المسؤول (<code>ERROR_ACCESS_DENIED</code>) والسماح بالتشغيل عند حدوث خطأ غير متوقع في النظام."
+              },
+              {
+                title: "منع تراكم نوافذ الأخطاء",
+                desc: "استمرار تسجيل جميع الأخطاء غير المتوقعة في ملف <code>crash_log.txt</code> مع تقييد ظهور نافذة التنبيه المنبثقة بمرة واحدة كحد أقصى كل 30 ثانية."
+              }
+            ]
+          },
+          {
+            accent: "accent-purple",
+            icon: "⚙️",
+            title: "تحسينات تشغيل ملفات الباتش والسجلات",
+            items: [
+              {
+                title: "دعم المسارات والأسماء العربية في ملفات .bat / .cmd",
+                desc: "إضافة <code>re.ASCII</code> لتعبيرات البحث النمطية لمنع التعامل مع بعض بايتات الحروف العربية (UTF-8) على أنها مسافات عند إضافة علامات التنصيص التلقائية لمسارات <code>%~dp0</code> أو تجاوز أمر <code>pause</code>."
+              },
+              {
+                title: "سجلات أنظف وأكثر دقة",
+                desc: "إزالة تكرار رسالة كود الخروج <code>1638</code> (البرنامج مثبت مسبقاً)، وضمان حفظ مسار التخزين في ملف السجل الخارجي دائماً دون تكراره في شاشة العرض."
+              }
+            ]
+          }
+        ],
         srvTag: "تطوير أدوات وبرامج مخصصة",
         srvHeading: "هل تحتاج إلى بناء أداة أتمتة أو برنامج سطح مكتب مخصص؟",
         srvDesc: "قمت بتصميم وبناء AutoDeploy بالكامل لحل مشكلات عملية حقيقية. أنا متاح لتصميم وبرمجة أدوات أتمتة مخصصة، وبرامج سطح مكتب لنظام ويندوز بواجهات زجاجية حديثة (Python / PyQt6) تعمل كملفات تنفيذية مستقلة تناسب احتياجات عملك.",
@@ -2398,7 +2670,7 @@
        START [JS-03: DOM RENDER ENGINE & GITHUB RELEASE API FETCHER]
        ========================================================================== */
     let activeStepModeIndex = 0;
-    let latestVersionStr = "v1.0.0";
+    let latestVersionStr = "v1.2.0";
     let latestSizeStr = "34.7 MB";
 
     function renderSite(lang) {
@@ -2413,6 +2685,7 @@
       document.getElementById("nav-queues").textContent = d.nav.queues;
       document.getElementById("nav-steps").textContent = d.nav.steps;
       document.getElementById("nav-challenges").textContent = d.nav.challenges;
+      document.getElementById("nav-changelog").textContent = d.nav.changelog;
       document.getElementById("nav-contact").textContent = d.nav.contact;
 
       document.getElementById("hero-tag").textContent = d.heroTag;
@@ -2491,6 +2764,31 @@
             <strong>${d.solutionLabel}</strong>
             ${ch.solution}
           </div>
+        </article>
+      `).join("");
+
+      // Release Changelog Section
+      document.getElementById("changelog-tag").textContent = d.changelogTag;
+      document.getElementById("changelog-title").textContent = d.changelogTitle;
+      document.getElementById("changelog-desc").textContent = d.changelogDesc;
+      const clGhBtn = document.getElementById("changelog-gh-link");
+      clGhBtn.textContent = d.changelogGhLink;
+      clGhBtn.href = `${GITHUB_REPO_URL}/releases`;
+
+      document.getElementById("changelog-grid").innerHTML = d.changelogCards.map(card => `
+        <article class="changelog-card ${card.accent}">
+          <div class="cl-card-header">
+            <span class="cl-icon-box" aria-hidden="true">${card.icon}</span>
+            <h3 class="cl-card-title">${card.title}</h3>
+          </div>
+          <ul class="cl-items-list">
+            ${card.items.map(it => `
+              <li class="cl-item">
+                <div class="cl-item-title">✓ ${it.title}</div>
+                <p class="cl-item-desc">${it.desc}</p>
+              </li>
+            `).join("")}
+          </ul>
         </article>
       `).join("");
 
